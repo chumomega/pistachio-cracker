@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Pistachio Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Pistachio Simulator! This is a fun and interactive web app that demonstrates different strategies for cracking and eating pistachios. It showcases two scenarios using visual simulations to compare performance.
 
-## Available Scripts
+## Structure of the App
 
-In the project directory, you can run:
+### Files and Directories
 
-### `npm start`
+- **`src/`**: Contains the main source code for the app.
+  - **`App.js`**: The main React component that renders the application, manages state, and handles simulation logic for both scenarios.
+  - **`App.css`**: Styling for the app, including animations and visual design.
+- **`public/`**: Contains static files such as the favicon, manifest, and index.html.
+  - **`favicon.ico`**: The app's favicon for legacy browsers.
+  - **`manifest.json`**: Metadata for progressive web app functionality.
+- **`build/`**: Generated during the production build. Contains minified static files for deployment.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Scenarios in the App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Scenario 1**: Uses a single data structure to store pistachio nuts and simulates finding, cracking, and eating them.
+- **Scenario 2**: Uses two data structures, separating nuts from shells, to demonstrate a potentially more efficient cracking process.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Contribute
 
-### `npm run build`
+We welcome contributions from the community! Here's how you can get involved:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/<your-username>/pistachio-simulator.git
+cd pistachio-simulator
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Install Dependencies
 
-### `npm run eject`
+Ensure you have Node.js installed, then run:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. Start the Development Server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Run the app locally:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+The app will be available at `http://localhost:3000`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Make Changes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Update the source code in the `src/` directory.
+- Test your changes locally.
 
-### Code Splitting
+### 5. Submit a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your feature description here"
+   ```
+4. Push to your fork:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. Open a pull request on the main repository.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to See the Live App
 
-### Making a Progressive Web App
+The app is deployed via GitHub Pages and can be accessed at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[Live Pistachio Simulator](https://<your-username>.github.io/pistachio-simulator/)
 
-### Advanced Configuration
+Ensure the latest updates are pushed to the `main` branch for deployment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is open-source and available under the MIT License. Feel free to use, modify, and distribute it as per the license terms.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy cracking pistachios with the Pistachio Simulator!
+
