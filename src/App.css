@@ -13,6 +13,16 @@
   margin: 20px 0;
 }
 
+.results .highlight-green {
+  color: green;
+  font-weight: bold;
+}
+
+.results .highlight-red {
+  color: red;
+  font-weight: bold;
+}
+
 .simulation {
   display: flex;
   justify-content: space-around;
@@ -45,9 +55,22 @@
   border-radius: 50%;
   background-color: #D2B48C;
   margin: 5px;
+  transition: all 0.2s ease-in-out;
 }
 
 .pistachio.cracked {
   background-color: #FFE4C4;
   border: 2px dashed #8B4513;
+}
+
+.pacman {
+  font-size: 2rem;
+  margin-top: 10px;
+  animation: eat 0.6s infinite;
+}
+
+@keyframes eat {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
 }
