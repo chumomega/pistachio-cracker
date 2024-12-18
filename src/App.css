@@ -23,6 +23,11 @@
   font-weight: bold;
 }
 
+.timeout {
+  color: red;
+  font-weight: bold;
+}
+
 .simulation {
   display: flex;
   justify-content: space-around;
@@ -46,7 +51,7 @@
   padding: 10px;
   margin: 10px auto;
   position: relative;
-  overflow-y: auto; /* Prevent overflow */
+  overflow-y: auto;
 }
 
 .pistachio {
@@ -66,11 +71,14 @@
 .pacman {
   font-size: 2rem;
   margin-top: 10px;
-  animation: eat 0.6s infinite;
+  animation: eat 1s linear infinite alternate;
 }
 
 @keyframes eat {
-  0% { transform: scale(1); }
-  50% { transform: scale(0.9); }
-  100% { transform: scale(1); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
 }
