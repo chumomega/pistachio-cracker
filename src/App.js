@@ -117,7 +117,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Pistachio Simulator</h1>
+      <h1>Nutty Efficiency</h1>
       <div className="input-section">
         <label htmlFor="pistachioCount">Number of Pistachios:</label>
         <input
