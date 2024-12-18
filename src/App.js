@@ -33,6 +33,11 @@ const App = () => {
     let cracked = 0;
 
     const crackNut = async (index) => {
+      // I'm adding a manual delay that increases with num cracked nuts. 
+      // In practice we shouldn't need it to show the inefficiencies between the scenarios, but you'd really only see the differences with huge numbers and I don't want the program to time out on users
+      const retrievalDelay = cracked * 10;
+      await new Promise((resolve) => setTimeout(resolve, retrievalDelay));
+      
       if (index !== -1) {
         data[index].cracked = true;
         cracked++;
