@@ -32,11 +32,10 @@ const App = () => {
     const data = [...scenario1Data];
     let cracked = 0;
 
-    for (let i = 0; i < pistachioCount; i++) {
+    const crackNut = async (index) => {
       const retrievalDelay = cracked * 10;
       await new Promise((resolve) => setTimeout(resolve, retrievalDelay));
 
-      const index = data.findIndex((p) => !p.cracked);
       if (index !== -1) {
         data[index].cracked = true;
         cracked++;
@@ -44,7 +43,13 @@ const App = () => {
         setScenario1Data([...data]);
         setCrackedCount((prev) => ({ ...prev, scenario1: cracked }));
       }
+
       await new Promise((resolve) => setTimeout(resolve, 300));
+    };
+
+    for (let i = 0; i < pistachioCount; i++) {
+      const index = data.findIndex((p) => !p.cracked);
+      await crackNut(index);
     }
 
     const end = performance.now();
@@ -57,7 +62,7 @@ const App = () => {
     const shellStack = [...shells];
     let cracked = 0;
 
-    for (let i = 0; i < pistachioCount; i++) {
+    const crackNut = async () => {
       const pistachio = nutStack.pop();
       if (pistachio) {
         shellStack.push({ ...pistachio, cracked: true });
@@ -66,7 +71,12 @@ const App = () => {
         setShells([...shellStack]);
         setCrackedCount((prev) => ({ ...prev, scenario2: cracked }));
       }
+
       await new Promise((resolve) => setTimeout(resolve, 300));
+    };
+
+    for (let i = 0; i < pistachioCount; i++) {
+      await crackNut();
     }
 
     const end = performance.now();
