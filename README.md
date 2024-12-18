@@ -78,7 +78,7 @@ The app will be available at `http://localhost:3000`.
 
 The app is deployed via GitHub Pages and can be accessed at:
 
-[Live Nutty Efficiency](https://<your-username>.github.io/pistachio-simulator/)
+[Live Nutty Efficiency](https://chumomega.github.io/pistachio-cracker/)
 
 Ensure the latest updates are pushed to the `main` branch for deployment.
 
