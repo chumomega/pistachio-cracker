@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Shell -->
+  <path d="M32 2C17 2 8 12 8 30s9 28 24 28 24-12 24-28S47 2 32 2z" fill="#f5deb3" />
+  <!-- Nut -->
+  <path d="M32 14c-8 0-14 5-14 16s6 20 14 20 14-9 14-20-6-16-14-16z" fill="#84c475" />
+  <!-- Inner shading -->
+  <path d="M32 18c-7 0-12 4-12 12s5 15 12 15 12-6 12-15-5-12-12-12z" fill="#5a9a66" />
+</svg>
