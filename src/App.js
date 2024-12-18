@@ -33,9 +33,6 @@ const App = () => {
     let cracked = 0;
 
     const crackNut = async (index) => {
-      const retrievalDelay = cracked * 10;
-      await new Promise((resolve) => setTimeout(resolve, retrievalDelay));
-
       if (index !== -1) {
         data[index].cracked = true;
         cracked++;
