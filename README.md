@@ -1,6 +1,6 @@
-# Pistachio Simulator
+# Nutty Efficiency
 
-Welcome to the Pistachio Simulator! This is a fun and interactive web app that demonstrates different strategies for cracking and eating pistachios. It showcases two scenarios using visual simulations to compare performance.
+Welcome to the Nutty Efficiency! This is a fun and interactive web app that demonstrates different strategies for cracking and eating pistachios. It showcases two scenarios using visual simulations to compare performance.
 
 ## Structure of the App
 
@@ -78,7 +78,7 @@ The app will be available at `http://localhost:3000`.
 
 The app is deployed via GitHub Pages and can be accessed at:
 
-[Live Pistachio Simulator](https://<your-username>.github.io/pistachio-simulator/)
+[Live Nutty Efficiency](https://<your-username>.github.io/pistachio-simulator/)
 
 Ensure the latest updates are pushed to the `main` branch for deployment.
 
@@ -90,5 +90,5 @@ This project is open-source and available under the MIT License. Feel free to us
 
 ---
 
-Enjoy cracking pistachios with the Pistachio Simulator!
+Enjoy cracking pistachios with the Nutty Efficiency!
 
